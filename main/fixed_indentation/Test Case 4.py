@@ -19,8 +19,7 @@ if not numbers:
                 sorted_numbers_length = len(sorted_numbers)
 
                 if sorted_numbers_length % 2 == 0:
-                    median = (sorted_numbers[sorted_numbers_length // 2 - 1] + sorted_numbers[
-                        sorted_numbers_length // 2]) / 2
+                    median = sorted_numbers[sorted_numbers_length // 2]
 
                     print('Median of the number...', median)
                     number_range = max_number - min_number

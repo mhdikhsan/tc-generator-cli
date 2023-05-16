@@ -4,8 +4,13 @@ from sklearn.cluster import KMeans
 import numpy as np
 import json
 import os
+import time
+import warnings
+
+warnings.filterwarnings("ignore")
 
 
+start_time = time.time()
 class Object:
     def __init__(self, _gvid, name, label):
         self._gvid = _gvid
@@ -44,6 +49,7 @@ class NodeEncoder(json.JSONEncoder):
 
 
 arg = sys.argv
+
 
 
 cfg = CFGBuilder().build_from_file('cfg', arg[1])
@@ -145,6 +151,9 @@ def generate_coverage_report(cfg):
 
     overall_average_percentage = sum(
         average_percentages) / len(average_percentages)
+    
+    end_time = time.time()
+    execution_time = end_time - start_time
 
     # Create a text file to save the output
     output_file = open('output.txt', 'w')
@@ -160,8 +169,8 @@ def generate_coverage_report(cfg):
                               for node in nodes) + "\n")
             output_file.write("\n")
 
-    output_file.write(
-        f"Overall Average Percentage = {overall_average_percentage:.2f}%\n")
+    output_file.write(f"Overall Average Percentage = {overall_average_percentage:.2f}%\n")
+    output_file.write(f"Program execution time: {execution_time} seconds\n")
 
     output_file.close()
 

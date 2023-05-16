@@ -19,8 +19,7 @@ if not numbers:
                 sorted_numbers_length = len(sorted_numbers)
 
                 if sorted_numbers_length % 2 == 0:
-                    median = (sorted_numbers[sorted_numbers_length // 2 - 1] + sorted_numbers[
-                        sorted_numbers_length // 2]) / 2
+                    median = sorted_numbers[sorted_numbers_length // 2]
 
                     print('Median of the number...', median)
                     number_range = max_number - min_number
@@ -51,8 +50,4 @@ if not numbers:
                         is_consecutive = True
 
                     for i in range(len(numbers) - 1):
-                        if numbers[i] + 1 != numbers[i + 1]:
-                            is_consecutive = False
-                            break
-
-                    print('The numbers are cons...', is_consecutive)
+                        print('The numbers are cons...', is_consecutive)
