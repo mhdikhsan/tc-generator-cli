@@ -1,0 +1,58 @@
+Test Cases with Highest Coverage in Each Cluster:
+Cluster 6:
+Test Case 115: Coverage = 14.71%
+Nodes: 30, 31, 32, 33, 34
+
+Cluster 4:
+Test Case 2: Coverage = 55.88%
+Nodes: 2, 5, 6, 8, 9, 14, 15, 19, 20, 21, 22, 23, 27, 28, 30, 31, 32, 33, 34
+
+Cluster 9:
+Test Case 3: Coverage = 50.00%
+Nodes: 2, 5, 6, 8, 9, 14, 15, 19, 20, 21, 22, 23, 27, 28, 30, 31, 34
+
+Test Case 5: Coverage = 50.00%
+Nodes: 2, 5, 6, 8, 9, 14, 15, 19, 20, 35, 22, 23, 27, 28, 30, 31, 34
+
+Cluster 10:
+Test Case 4: Coverage = 55.88%
+Nodes: 2, 5, 6, 8, 9, 14, 15, 19, 20, 35, 22, 23, 27, 28, 30, 31, 32, 33, 34
+
+Cluster 5:
+Test Case 28: Coverage = 50.00%
+Nodes: 10, 11, 12, 13, 9, 14, 15, 19, 20, 21, 22, 23, 27, 28, 30, 31, 34
+
+Cluster 2:
+Test Case 30: Coverage = 50.00%
+Nodes: 10, 11, 12, 13, 9, 14, 15, 19, 20, 35, 22, 23, 27, 28, 30, 31, 34
+
+Cluster 8:
+Test Case 27: Coverage = 55.88%
+Nodes: 10, 11, 12, 13, 9, 14, 15, 19, 20, 21, 22, 23, 27, 28, 30, 31, 32, 33, 34
+
+Test Case 29: Coverage = 55.88%
+Nodes: 10, 11, 12, 13, 9, 14, 15, 19, 20, 35, 22, 23, 27, 28, 30, 31, 32, 33, 34
+
+Cluster 3:
+Test Case 75: Coverage = 47.06%
+Nodes: 17, 18, 16, 15, 19, 20, 21, 22, 23, 27, 28, 30, 31, 32, 33, 34
+
+Cluster 7:
+Test Case 77: Coverage = 47.06%
+Nodes: 17, 18, 16, 15, 19, 20, 35, 22, 23, 27, 28, 30, 31, 32, 33, 34
+
+Cluster 1:
+Test Case 91: Coverage = 32.35%
+Nodes: 20, 21, 22, 23, 27, 28, 30, 31, 32, 33, 34
+
+Test Case 93: Coverage = 32.35%
+Nodes: 20, 35, 22, 23, 27, 28, 30, 31, 32, 33, 34
+
+Cluster 11:
+Test Case 92: Coverage = 26.47%
+Nodes: 20, 21, 22, 23, 27, 28, 30, 31, 34
+
+Test Case 94: Coverage = 26.47%
+Nodes: 20, 35, 22, 23, 27, 28, 30, 31, 34
+
+Overall Average Percentage = 44.12%
