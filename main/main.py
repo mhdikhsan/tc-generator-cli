@@ -53,8 +53,7 @@ arg = sys.argv
 
 
 cfg = CFGBuilder().build_from_file('cfg', arg[1])
-cfg_visual = cfg.build_visual(
-    'cfgvisual', 'json', build_keys=False, calls=False)
+cfg_visual = cfg.build_visual('cfgvisual', 'json', build_keys=False, calls=False)
 cfg.build_visual('cfg_visual/cfgvisual', 'png', build_keys=False, calls=False)
 
 
@@ -88,7 +87,7 @@ with open('cfgvisual.json') as json_file:
 cfg = {}
 
 for obj in data['objects']:
-    cfg[obj['_gvid']] = Node(obj['name'], obj['_gvid'],
+    cfg[obj['_gvid']] = Node(obj['name'], obj['_gvid'], 
                              obj['label'].replace("\\l", "\n"))
 
 for edge in data['edges']:
